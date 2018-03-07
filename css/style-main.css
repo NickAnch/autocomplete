@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font: 14px "Segoe UI";
+    color: #404040;
+    line-height: 20px;
+    margin:20px;
+}
+
+.p_city {
+    display: inline-block;
+    margin-right: 45px;
+}
+
+#city {
+    color: #404040;
+    outline: none;
+    font: 14px "Segoe UI";
+    width: 280px;
+    height: 30px;
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #969696;
+    padding-left: 7px;
+}
+
+#city:focus{
+    border: 1px solid #5199db;
+    box-shadow: 0 0 0 1px rgb(81,153,219);
+}
+
+#city::-webkit-input-placeholder{
+	color: #a8a8a8;
+}
+#city:focus::-webkit-input-placeholder{
+	color: #ccc;
+}
+
+#city::-moz-placeholder{
+	color: #a8a8a8;
+}
+#city:focus::-moz-placeholder{
+	color: #ccc;
+}
+
+#city:-ms-input-placeholder {
+	color: #a8a8a8;
+}
+#city:focus:-ms-input-placeholder {
+	color: #ccc;
+}
+
+.wrapper-autocomp{
+    position:relative;
+}
+
+.autocomplete {
+    position: absolute;
+    left:88px;
+    top:33px;
+    width: 330px;
+    border: 1px solid #d9d9d9;
+    display: none;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.loader {
+    position: absolute;
+    left:88px;
+    top:33px;
+    width: 330px;
+    border: 1px solid #d9d9d9;
+    display: none;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.validation {
+    display: none;
+}
+
+.red-valid {
+    display:inline-block;
+    position:absolute;
+    left:88px;
+    padding-top: 5px;
+    color: #da0c09;
+}
+
+.orange-valid {
+    display:inline-block;
+    position:absolute;
+    left:88px;
+    top: 64px;
+    padding-top: 5px;
+    color: #f69c00;
+}
+
+.mist {
+    color: #b5b5b5;
+    padding: 5px 0 5px 7px;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul#so li {
+    padding: 5px 0 5px 7px;
+    cursor: pointer;
+}
+
+ul#so li:first-child{
+    background-color: #5199db;
+    color: #FFF;
+}
+
+ul#so li:hover {
+    background-color: #5199db;
+    color: #FFF;
+}
+.results {
+    color: #b5b5b5;
+    font-size: 12px;
+    display: inline;
+}
+
+.getFail {
+    display: inline-block;
+    color: #c1c1c1;
+    font-size: 14px;
+    margin: 5px;
+    padding-left: 5px;
+}
+
+.strOfRes {
+    line-height: 15px;
+    padding: 10px 0 10px 7px;
+}
+/*
+.circle-load{
+    position:relative;
+    left: 6px;
+    top:2px;
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    border-top: 2px solid #c1c1c1;;
+    border-right: 2px solid #c1c1c1;;
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #c1c1c1;;
+    animation-name: cir;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cir {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg)
+    }
+}
+*/
